@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index : true,
-        loader : () => fetch('http://localhost:4000/coffees'),
+        loader : () => fetch('https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/coffees'),
         Component: Home
       },
       {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path : 'updateCoffee/:id',
-        loader: ({params}) => fetch(`http://localhost:4000/coffees/${params.id}`),
+        loader: ({params}) => fetch(`https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/coffees/${params.id}`),
         Component: UpdateCoffee
       },
       {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path : 'users',
-        loader : () => fetch('http://localhost:4000/user'),
+        loader : () => fetch('https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/user'),
         Component : User
       }
     ]

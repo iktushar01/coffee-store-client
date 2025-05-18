@@ -25,7 +25,7 @@ const SignUp = () => {
         };
 
         //save profile info in the db
-        fetch("http://localhost:4000/users", {
+        fetch("https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

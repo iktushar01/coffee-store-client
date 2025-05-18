@@ -6,7 +6,7 @@ const CoffeeCard = ({ coffee , coffees ,setCoffees }) => {
 
   const handleDelete = () => {
     console.log(_id);
-    fetch(`http://localhost:4000/coffees/${_id}`, {
+    fetch(`https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/coffees/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

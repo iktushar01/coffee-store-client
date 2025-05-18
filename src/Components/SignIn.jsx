@@ -19,7 +19,7 @@ const SignIn = () => {
           lastSignInTime: result?.user?.metadata?.lastSignInTime,
         };
         //update last sign in to the database
-        fetch('http://localhost:4000/user',{
+        fetch('https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/user',{
           method : 'PATCH',
           headers : {
             'content-type' : 'application/json'

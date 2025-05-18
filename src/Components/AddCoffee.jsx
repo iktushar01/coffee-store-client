@@ -9,7 +9,7 @@ const AddCoffee = () => {
         console.log(newCoffee);
 
         // send data to the database
-        fetch('http://localhost:4000/coffees', {
+        fetch('https://coffiee-store-server-3tfafwnnq-tushars-projects-188d83fb.vercel.app/coffees', {
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'
